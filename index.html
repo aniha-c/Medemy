@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Users/arushidhawale/Desktop/BOOTCAMP/fontawesome-free-6.7.2-web/css/all.min.css">
+    <meta cherset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+        crossorigin="anonymous"></script>
+
+    <title>
+        Project 2
+    </title>
+    <style>
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .front {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+            margin-left: 80px;
+        }
+
+        .spons {
+            height: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .cardHov {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-shadow: none;
+            outline: 5px solid transparent;
+            /* Space between image and border */
+            transition: height 0.5s, width 0.5s, outline 0.5s, box-shadow 0.8s;
+
+        }
+
+        .card {
+            width: 18rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cardHov:hover {
+            border-color: black 5px solid;
+            box-shadow: 0px 30px 50px 0px rgba(16, 16, 16, 0.219);
+            outline: 10px solid transparent;
+            /* Space between image and border */
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.min.js"
+        integrity="sha384-Re460s1NeyAhufAM5JwfIGWosokaQ7CH15ti6W5Y4wC/m4eJ5opJ2ivohxVM05Wd"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left:20px;">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML-CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">Full Stack</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><b>Certifications</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Business
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Management</a></li>
+                            <li><a class="dropdown-item" href="#">Internship</a></li>
+                            <li><a class="dropdown-item" href="#">Sales</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><b>Sales</b></a></li>
+                            <li><a class="dropdown-item" href="#">Accounting</a></li>
+                            <li><a class="dropdown-item" href="#">Crypto-Currency</a></li>
+                            <li><a class="dropdown-item" href="#">Investing and Trading</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Earn a certificate
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Microsoft Python Development</a></li>
+                            <li><a class="dropdown-item" href="#">Amazon Junior Software Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Google Cybesecurity</a></li>
+                            <li><a class="dropdown-item" href="#">Full Stack</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><b>Browse All</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav
+        style="background-color: #d5eae9; color: black; height: 60px; display: flex; justify-content: center; align-items: center;">
+        <p style="margin: 0; font-size: 14px;">Prepare for certification exams in IT, cybersecurity, and more with
+            affordable <a href="courses.html">prep courses.<a></p>
+    </nav>
+
+    <div class="front">
+        <div style="display: flex; align-items: center;">
+            <p style="color: grey; font-size: 70px; margin: 80px; width: 400px;"><span
+                    style="color:rgb(29, 49, 107); font-weight: bold;">Code. </span>
+                <br>
+                Create.
+                <br>Conquer.
+            </p>
+        </div>
+        <img src="https://img.freepik.com/free-vector/isometric-online-education-concept_52683-7830.jpg?semt=ais_hybrid&w=740"
+            alt="image couldn't be loaded." style="margin-right: 50px;">
+    </div>
+
+    <!-- Card Carousel -->
+     <p style="font-size: 35px; text-align: center; font-weight:  bold; margin-bottom: 50px;">Our Popular Courses</p>
+    <!-- 1 -->
+    <div style="display: flex; justify-content: space-between; margin-left: 20px; margin-right: 20px; margin-top: 30px;">
+        <div class="cardHov">
+        <div class="card">
+            <img src="https://img-c.udemycdn.com/course/750x422/5170404_d282_9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Complete AI Guide: Learn ChatGPT, Generative AI & More</h5>
+              <p class="card-text">50+ Generative AI Tools to 10x Business, Productivity, Creativity | ChatGPT, Artificial Intelligence, Prompt Engineering</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="cardHov">
+          <div class="card">
+            <img src="https://img-c.udemycdn.com/course/750x422/5105478_d2a8_3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ChatGPT Masterclass - Build Solutions and Apps with ChatGPT</h5>
+              <p class="card-text">Integrate ChatGPT into no-code apps and solutions | ChatGPT API | Create 6+ ChatGPT integrations | Build 4+ ChatGPT apps</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+          <!-- 3 -->
+          <div class="cardHov">
+          <div class="card">
+            <img src="https://img-c.udemycdn.com/course/750x422/5061666_b32b_6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ChatGPT: Complete ChatGPT Course For Work 2025 (Ethically)!</h5>
+              <p class="card-text">ChatGPT Artificial Intelligence (AI) Is Revolutionizing Work. Let ChatGPT AI Help You In So Many Ways. New ChatGPT 4o.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4" style="background-color: rgb(213, 234, 233); color: black; height: 200px;">
+        <p style="font-size: 30px; margin-bottom: 30px;">We collaborate with...</p>
+        <div style="display: flex; justify-content: space-between;">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=2&h=32"
+                alt="Couldn't load">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=2&h=32"
+                alt="Couldn't load">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=2&h=37"
+                alt="Couldn't load">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=2&h=27"
+                alt="Couldn't load">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=2&h=37"
+                alt="Couldn't load">
+            <img class="spons"
+                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=2&h=37"
+                alt="Couldn't load">
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
